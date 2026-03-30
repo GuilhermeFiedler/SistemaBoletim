@@ -10,7 +10,6 @@ public class Matricula {
 
     private Aluno aluno;
     private Disciplinas disciplina;
-    private List<Nota> notas = new ArrayList<>();
 
     public Matricula(Aluno aluno, Disciplinas disciplina) {
         this.aluno = aluno;

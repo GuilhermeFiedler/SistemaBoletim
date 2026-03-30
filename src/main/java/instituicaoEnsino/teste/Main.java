@@ -1,5 +1,6 @@
 package instituicaoEnsino.teste;
 
+import instituicaoEnsino.config.DatabaseInitializer;
 import instituicaoEnsino.dominio.Menu;
 import instituicaoEnsino.service.SistemaAcademicoService;
 import java.util.Scanner;
@@ -8,6 +9,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        DatabaseInitializer.init();
 
         Scanner scanner = new Scanner(System.in);
         SistemaAcademicoService service = new SistemaAcademicoService();
